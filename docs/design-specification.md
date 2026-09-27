@@ -17,6 +17,8 @@
 | `adminSourcePrefix` | `string` | Approved source range for SSH/RDP; must not default to `*`. |
 | `availabilityZone` | `string` | Planned default zone for the VM instances. |
 
+The current two-VM profiles use one zone by default. The implementation must not describe this as zone redundancy; spreading instances across zones is a separate design choice tied to the client availability requirement.
+
 ## Module interfaces
 
 ### `network.bicep`

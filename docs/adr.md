@@ -1,9 +1,9 @@
 # Architecture Decision Record: VM Fleet Commander
 
-- **Status:** Proposed design baseline
+- **Status:** Design and specification complete; implementation not yet merged
 - **Date:** 2026-09-27
 - **Scope:** Repeatable MSP client VM provisioning
-- **Implementation status:** Not yet published or deployed
+- **Implementation status:** Not yet merged or deployed
 
 ## Context
 
@@ -45,6 +45,8 @@ Administrative credentials are passed as secure deployment inputs. No password, 
 ## Decision 5: Environment parameterisation
 
 The orchestration template exposes `vmCount`, `environmentName`, VM sizing, administrative inputs, and network values. The planned development profile uses two smaller VMs; the production profile uses a larger VM size. Exact SKU availability and cost must be checked at implementation time rather than treated as permanent facts.
+
+Both planned profiles currently place the two VM instances in one availability zone. That is a placement default, not zone-level redundancy; a multi-zone requirement must be made explicit in the design and tested against the client's availability target.
 
 ## Client deliverable
 

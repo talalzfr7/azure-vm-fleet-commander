@@ -2,7 +2,7 @@
 
 > A parameterised Bicep design for repeatable Azure VM provisioning in an MSP client context.
 
-**Status: design/specification baseline.** This public repository records the intended architecture, security decisions, module contracts, and verification criteria. The Bicep implementation and Azure deployment evidence are intentionally not published yet.
+**Status: design and specification complete; implementation not yet merged.** This public repository records the intended architecture, security decisions, module contracts, and verification criteria. The Bicep implementation and Azure deployment evidence are intentionally not published yet.
 
 ## Client scenario
 
